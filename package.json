@@ -1,0 +1,20 @@
+{
+  "name": "@kroyd/ui-kit-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm build:core && pnpm build:styles && pnpm build:tokens",
+    "build:core": "pnpm -w -F @kroyd/ui-core build",
+    "build:styles": "pnpm -w -F @kroyd/ui-styles build",
+    "build:tokens": "pnpm -w -F @kroyd/ui-tokens build",
+    "storybook": "pnpm -w -F @kroyd/ui-docs storybook --port 7007",
+    "dev:core": "pnpm -w -F @kroyd/ui-core dev"
+  },
+  "devDependencies": {
+    "shx": "^0.4.0"
+  }
+}

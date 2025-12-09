@@ -1,0 +1,16 @@
+{
+  "name": "@kroyd/ui-docs",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build": "storybook build",
+    "preview": "storybook build && npx http-server storybook-static"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.20",
+    "@storybook/web-components-vite": "^7.6.20",
+    "storybook": "^7.6.20",
+    "vite": "^5.0.0"
+  }
+}

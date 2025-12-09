@@ -1,0 +1,14 @@
+{
+  "name": "@kroyd/ui-tokens",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "shx mkdir -p dist && shx cp src/tokens.css dist/ && shx cp src/tokens.json dist/",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4"
+  }
+}

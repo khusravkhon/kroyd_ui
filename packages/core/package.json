@@ -1,0 +1,25 @@
+{
+  "name": "@kroyd/ui-core",
+  "version": "0.0.1",
+  "private": false,
+  "main": "dist/kroyd-ui-core.umd.js",
+  "module": "dist/kroyd-ui-core.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "echo 'add lint'"
+  },
+  "dependencies": {
+    "lit": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vite-plugin-dts": "^3.5.0",
+    "sass": "^1.70.0"
+  }
+}
