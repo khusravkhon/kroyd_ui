@@ -1,0 +1,18 @@
+import { css } from "lit";
+
+export const buttonStyles = css`
+  button {
+    padding: 8px 16px;
+    border-radius: var(--radius-md, 8px);
+    background: var(--color-primary, #4f46e5);
+    color: var(--color-text, #ffffff);
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size-base, 14px);
+    transition: 0.12s ease-in-out;
+  }
+
+  button:hover {
+    opacity: 0.92;
+  }
+`;

@@ -1,13 +1,10 @@
-import "../../../core/dist/components/button/button";
-// import "../../../styles/src/components/index.css";
-
 export default {
-  title: "Components/Button",
+  title: "UI/Button",
 };
 
-export const Default = () => `<ui-button>Default</ui-button>`;
-
-export const Dark = () => {
-  document.documentElement.setAttribute("theme", "dark");
-  return `<ui-button>Dark</ui-button>`;
-};
+export const Basic = () => `
+ <div style="margin-top: 20px;">
+ <ui-button>ergerg</ui-button>
+ <ui-button>ergerg</ui-button>
+ </div>
+`;

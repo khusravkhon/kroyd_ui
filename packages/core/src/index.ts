@@ -1,2 +1,3 @@
-// точки входа — регистрируем web components
+import "./components/button/button";
+
 export * from "./components/button/button";

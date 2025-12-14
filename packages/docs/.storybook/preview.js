@@ -1,6 +1,5 @@
 import "../../tokens/dist/tokens.css";
-import "../../styles/dist/index.css";
-import "@kroyd/ui-core";
+import "../../core/dist/kroyd-ui-core.mjs";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

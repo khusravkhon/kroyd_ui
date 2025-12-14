@@ -7,12 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm build:core && pnpm build:styles && pnpm build:tokens",
-    "build:core": "pnpm -w -F @kroyd/ui-core build",
-    "build:styles": "pnpm -w -F @kroyd/ui-styles build",
-    "build:tokens": "pnpm -w -F @kroyd/ui-tokens build",
-    "storybook": "pnpm -w -F @kroyd/ui-docs storybook --port 7007",
-    "dev:core": "pnpm -w -F @kroyd/ui-core dev"
+    "build": "pnpm build:core  && pnpm build:tokens",
+    "build:core": "pnpm  -F @kroyd/ui-core build",
+    "build:tokens": "pnpm  -F @kroyd/ui-tokens build",
+    "storybook": "pnpm  -F @kroyd/ui-docs storybook --port 7007"
   },
   "devDependencies": {
     "shx": "^0.4.0"

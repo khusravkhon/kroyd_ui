@@ -1,16 +1,17 @@
 import { LitElement, html } from "lit";
-
+import { buttonStyles } from "./button.styles";
 /**
  * Headless Web Component — логика без Shadow DOM и без встроенных стилей.
  * Пользователь может подключать стили отдельно.
  */
 export class UiButton extends LitElement {
-  createRenderRoot() {
-    return this; // отключаем Shadow DOM, чтобы стили применялись извне
-  }
-
+  static styles = buttonStyles;
   render() {
-    return html`<button class="ui-button"><slot></slot></button>`;
+    return html`
+      <button part="button">
+        <slot></slot>
+      </button>
+    `;
   }
 }
 
