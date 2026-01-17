@@ -7,10 +7,18 @@ export default defineConfig({
       entry: "src/index.ts",
       name: "KroydUICore",
       fileName: "kroyd-ui-core",
-    },
-    rollupOptions: {
-      external: [],
+      formats: ["es", "umd"],
     },
   },
-  plugins: [dts()],
+
+  plugins: [
+    dts({
+      tsconfigPath: "tsconfig.build.json",
+      entryRoot: "src",
+      outDir: "dist",
+      cleanVueFileName: true,
+      insertTypesEntry: true,
+      exclude: ["vite.config.ts", "**/*.test.ts"],
+    }),
+  ],
 });

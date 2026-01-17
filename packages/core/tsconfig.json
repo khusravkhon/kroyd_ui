@@ -1,8 +1,15 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
-    "rootDir": "src"
-  },
-  "include": ["src"]
+    "target": "ES2022",
+    "module": "ESNext",
+
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+
+    "moduleResolution": "Bundler",
+    "lib": ["DOM", "ES2022"],
+
+    "strict": true,
+    "skipLibCheck": true
+  }
 }

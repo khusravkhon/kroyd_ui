@@ -1,0 +1,11 @@
+@import "./foundation.css";
+@import "./components.css";
+@import "./themes/light.css";
+@import "./themes/dark.css";
+
+/* html,
+body {
+  background: var(--modal-bg);
+  margin: 0;
+  padding: 0;
+} */

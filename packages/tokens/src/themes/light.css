@@ -1,0 +1,21 @@
+:root {
+  --main-primary: #0b5fde;
+  --grey: rgb(243, 243, 243);
+  --error: #e92444;
+  --text-primary: #1f2022;
+  --success: #11a16d;
+  --cards-white: #fff;
+  --background-grey: #eaecf0;
+  --sofr-green: rgb(237, 254, 243);
+  --sofr-orange: rgb(255, 233, 234);
+  --grey-secondary: rgb(245, 246, 246);
+  --stroke-primary: rgb(192, 195, 200);
+  --stroke-secondary: rgb(213, 215, 218);
+  --text-secondary: rgb(120, 121, 122);
+  --stroke-tertiary: rgb(213, 215, 218);
+  --table-warning: #ffebd9;
+  --row-hover: #e9ecef;
+  --modal-bg: #fff;
+  --cell-highlight: #b3d1ff;
+  --cell-selected: #42a5f5;
+}

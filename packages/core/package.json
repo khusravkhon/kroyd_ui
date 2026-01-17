@@ -1,20 +1,38 @@
 {
   "name": "@kroyd/ui-core",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "private": false,
-  "main": "dist/kroyd-ui-core.umd.js",
-  "module": "dist/kroyd-ui-core.es.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "dist/kroyd-ui-core.mjs"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/kroyd-ui-core.mjs",
+      "require": "./dist/kroyd-ui-core.umd.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/kroyd-ui-core.umd.js"
+    }
+  },
+  "main": "dist/kroyd-ui-core.umd.js",
+  "module": "dist/kroyd-ui-core.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
-    "lint": "echo 'add lint'"
+    "dev": "vite"
   },
   "dependencies": {
     "lit": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
   },
   "devDependencies": {
     "vite": "^5.0.0",

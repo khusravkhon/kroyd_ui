@@ -1,14 +1,28 @@
 {
   "name": "@kroyd/ui-tokens",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "private": false,
   "files": [
     "dist"
   ],
+  "style": "dist/index.css",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "style": "./dist/index.css",
+      "default": "./dist/index.css"
+    },
+    "./dist/index.css": "./dist/index.css"
+  },
   "scripts": {
-    "build": "shx mkdir -p dist && shx cp src/tokens.css dist/ && shx cp src/tokens.json dist/",
+    "build": "shx mkdir -p dist && postcss src/index.css -o dist/index.css && shx cp src/index.d.ts dist/index.d.ts",
     "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
     "shx": "^0.3.4"
   }
 }
